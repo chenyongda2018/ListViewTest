@@ -24,9 +24,9 @@ public class FirstActivity extends AppCompatActivity {
         setContentView(R.layout.activity_first);
         ListView listView = findViewById(R.id.activity_first_list_view);
         ImageAdapter adapter = new ImageAdapter(this,0, Images.imageUrls);
-        View headerView = getLayoutInflater().inflate(R.layout.header_view,listView,false);
-        listView.addHeaderView(headerView);
-        listView.addFooterView(headerView);
+        //View headerView = getLayoutInflater().inflate(R.layout.header_view,listView,false);
+        //listView.addHeaderView(headerView);
+        //listView.addFooterView(headerView);
         listView.setAdapter(adapter);
 
 

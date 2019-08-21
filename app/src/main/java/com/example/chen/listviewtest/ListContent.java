@@ -7,13 +7,10 @@ public class ListContent implements  Serializable{
     private int textViewId;
     private boolean checkStatus;
 
-
-    public ListContent(String name,int textViewId) {
+    public ListContent(String name) {
         this.name = name;
-        this.textViewId = textViewId;
-
-
     }
+
     public String getName() {
         return this.name;
     }
@@ -22,5 +19,4 @@ public class ListContent implements  Serializable{
     }
     public boolean getCheckStatus() { return this.checkStatus;}
     public void setCheckStatus(boolean checkStatus) {this.checkStatus = checkStatus;}
-
 }

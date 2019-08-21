@@ -11,7 +11,9 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.chen.listviewtest.first.FirstActivity;
+import com.example.chen.listviewtest.fourth.FourthActivity;
 import com.example.chen.listviewtest.second.SecondActivity;
+import com.example.chen.listviewtest.third.ThirdActivity;
 
 import java.util.LinkedList;
 
@@ -38,44 +40,44 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (listContentList.get(position).getName()) {
-                    case "第一个事件":
+                switch (position) {
+                    case 0:
                         Intent intent0 = new Intent(MainActivity.this, FirstActivity.class);
                         startActivity(intent0);
                         break;
-                    case "第二个事件":
+                    case 1:
                         Intent intent1 = new Intent(MainActivity.this, SecondActivity.class);
                         startActivity(intent1);
                         break;
-                    case "第三个事件":
-                        Intent intent2 = new Intent(MainActivity.this,ThirdActivity.class);
+                    case 2:
+                        Intent intent2 = new Intent(MainActivity.this, ThirdActivity.class);
                         startActivity(intent2);
                         break;
-                    case "第四个事件":
-                        Intent intent3 = new Intent(MainActivity.this,FourthActivity.class);
+                    case 3:
+                        Intent intent3 = new Intent(MainActivity.this, FourthActivity.class);
                         startActivity(intent3);
                         break;
-                    case "第五个事件":
+                    case 4:
                         Intent intent4 = new Intent(MainActivity.this,FifthActivity.class);
                         startActivity(intent4);
                         break;
-                    case "第六个事件":
+                    case 5:
                         Intent intent5 = new Intent(MainActivity.this,SixthActivity.class);
                         startActivity(intent5);
                         break;
-                    case "第七个事件":
+                    case 6:
                         Intent intent6 = new Intent(MainActivity.this,SeventhActivity.class);
                         startActivity(intent6);
                         break;
-                    case "第八个事件":
+                    case 7:
                         Intent intent7 = new Intent(MainActivity.this,EighthActivity.class);
                         startActivity(intent7);
                         break;
-                    case "第九个事件":
+                    case 8:
                         Intent intent8 = new Intent(MainActivity.this,NinethActivity.class);
                         startActivity(intent8);
                         break;
-                    case "第十个事件":
+                    case 9:
                         Intent intent9 = new Intent(MainActivity.this,TenthActivity.class);
                         startActivity(intent9);
                         break;
@@ -119,25 +121,25 @@ public class MainActivity extends AppCompatActivity {
     }
     //初始化列表文字内容
     private void initListContent() {
-        ListContent firstList = new ListContent("第一个事件",R.id.check_box);
+        ListContent firstList = new ListContent("图片加载");
         listContentList.add(firstList);
-        ListContent secondList = new ListContent("第二个事件",R.id.check_box);
+        ListContent secondList = new ListContent("下拉刷新,下滑加载");
         listContentList.add(secondList);
-        ListContent thirdList = new ListContent("第三个事件",R.id.check_box);
+        ListContent thirdList = new ListContent("Service使用");
         listContentList.add(thirdList);
-        ListContent forthList = new ListContent("第四个事件",R.id.check_box);
+        ListContent forthList = new ListContent("第四个事件");
         listContentList.add(forthList);
-        ListContent fifthList = new ListContent("第五个事件",R.id.check_box);
+        ListContent fifthList = new ListContent("第五个事件");
         listContentList.add(fifthList);
-        ListContent sixthList = new ListContent("第六个事件",R.id.check_box);
+        ListContent sixthList = new ListContent("第六个事件");
         listContentList.add(sixthList);
-        ListContent seventhList = new ListContent("第七个事件",R.id.check_box);
+        ListContent seventhList = new ListContent("第七个事件");
         listContentList.add(seventhList);
-        ListContent eigthList = new ListContent("第八个事件",R.id.check_box);
+        ListContent eigthList = new ListContent("第八个事件");
         listContentList.add(eigthList);
-        ListContent ninethList = new ListContent("第九个事件",R.id.check_box);
+        ListContent ninethList = new ListContent("第九个事件");
         listContentList.add(ninethList);
-        ListContent tenthList = new ListContent("第十个事件",R.id.check_box);
+        ListContent tenthList = new ListContent("第十个事件");
         listContentList.add(tenthList);
     }
 
