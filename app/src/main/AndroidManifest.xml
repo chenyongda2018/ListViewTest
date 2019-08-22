@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
@@ -12,9 +13,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <receiver
+            android:name=".fifth.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.chen.listviewtest.MY_BOADCAST"/>
+            </intent-filter>
+        </receiver>
+
         <service
             android:name=".third.MyIntentService"
-            android:exported="true"></service>
+            android:exported="true" />
         <service
             android:name=".third.MyService"
             android:enabled="true"
@@ -31,7 +41,7 @@
         <activity android:name=".second.SecondActivity" />
         <activity android:name=".third.ThirdActivity" />
         <activity android:name=".fourth.FourthActivity" />
-        <activity android:name=".FifthActivity" />
+        <activity android:name=".fifth.FifthActivity" />
         <activity android:name=".SixthActivity" />
         <activity android:name=".SeventhActivity" />
         <activity android:name=".EighthActivity" />

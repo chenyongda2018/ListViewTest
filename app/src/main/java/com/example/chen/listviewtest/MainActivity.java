@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.chen.listviewtest.fifth.FifthActivity;
 import com.example.chen.listviewtest.first.FirstActivity;
 import com.example.chen.listviewtest.fourth.FourthActivity;
 import com.example.chen.listviewtest.second.SecondActivity;
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent3);
                         break;
                     case 4:
-                        Intent intent4 = new Intent(MainActivity.this,FifthActivity.class);
+                        Intent intent4 = new Intent(MainActivity.this, FifthActivity.class);
                         startActivity(intent4);
                         break;
                     case 5:
@@ -127,9 +128,9 @@ public class MainActivity extends AppCompatActivity {
         listContentList.add(secondList);
         ListContent thirdList = new ListContent("Service使用");
         listContentList.add(thirdList);
-        ListContent forthList = new ListContent("第四个事件");
+        ListContent forthList = new ListContent("OkHttp");
         listContentList.add(forthList);
-        ListContent fifthList = new ListContent("第五个事件");
+        ListContent fifthList = new ListContent("广播");
         listContentList.add(fifthList);
         ListContent sixthList = new ListContent("第六个事件");
         listContentList.add(sixthList);

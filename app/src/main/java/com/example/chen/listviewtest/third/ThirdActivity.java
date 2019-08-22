@@ -32,7 +32,7 @@ public class ThirdActivity extends AppCompatActivity {
     @BindView(R.id.third_start_intent_service)
     Button mStartIntentService;
 
-    private MyService.DownloadBinder mDownloadBinder ;
+    private MyService.DownloadBinder mDownloadBinder;
 
     private ServiceConnection mConnection = new ServiceConnection() {
         @Override
@@ -59,33 +59,33 @@ public class ThirdActivity extends AppCompatActivity {
 
     @OnClick(R.id.third_act_start_service)
     public void startService() {
-        Intent service = new Intent(this,MyService.class);
+        Intent service = new Intent(this, MyService.class);
         startService(service);
     }
 
     @OnClick(R.id.third_act_stop_service)
     public void stopService() {
-        Intent service = new Intent(this,MyService.class);
+        Intent service = new Intent(this, MyService.class);
         stopService(service);
     }
 
     @OnClick(R.id.third_act_bind_service)
     public void bindService() {
-        Intent service = new Intent(this,MyService.class);
-        bindService(service,mConnection,BIND_AUTO_CREATE);
+        Intent service = new Intent(this, MyService.class);
+        bindService(service, mConnection, BIND_AUTO_CREATE);
     }
 
     @OnClick(R.id.third_act_unbind_service)
     public void unbindService() {
         unbindService(mConnection);
     }
+
     @OnClick(R.id.third_start_intent_service)
     public void setStartIntentService() {
-        Log.d("MyIntentService","thread id is"+ Thread.currentThread().getId());
-        Intent intent = new Intent(this,MyIntentService.class);
+        Log.d("MyIntentService", "thread id is" + Thread.currentThread().getId());
+        Intent intent = new Intent(this, MyIntentService.class);
         startService(intent);
     }
-
 
 
 }
