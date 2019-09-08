@@ -6,15 +6,20 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.example.chen.listviewtest.fifth.FifthActivity;
-import com.example.chen.listviewtest.first.FirstActivity;
-import com.example.chen.listviewtest.fourth.FourthActivity;
-import com.example.chen.listviewtest.second.SecondActivity;
-import com.example.chen.listviewtest.third.ThirdActivity;
+import com.example.chen.listviewtest.eight_handlerThread.EighthActivity;
+import com.example.chen.listviewtest.fifth_broadcast.FifthActivity;
+import com.example.chen.listviewtest.first_image_load.FirstActivity;
+import com.example.chen.listviewtest.fourth_okhttp.FourthActivity;
+import com.example.chen.listviewtest.second_pull_refresh.SecondActivity;
+import com.example.chen.listviewtest.seventh_animator.SeventhActivity;
+import com.example.chen.listviewtest.sixth_fragment.SixthActivity;
+import com.example.chen.listviewtest.sixth_fragment.UserManager;
+import com.example.chen.listviewtest.third_service.ThirdActivity;
 
 import java.util.LinkedList;
 
@@ -33,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         context = MainActivity.this;
         //初始化列表内容
+        UserManager.sUserId = 2;
+        Log.d("hhhhh","userid : MainActivity " + UserManager.sUserId);
+
         initListContent();
         adapter = new ListAdapter(listContentList,context);
         ListView listView =(ListView)findViewById(R.id.list_view);
@@ -63,15 +71,15 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent4);
                         break;
                     case 5:
-                        Intent intent5 = new Intent(MainActivity.this,SixthActivity.class);
+                        Intent intent5 = new Intent(MainActivity.this, SixthActivity.class);
                         startActivity(intent5);
                         break;
                     case 6:
-                        Intent intent6 = new Intent(MainActivity.this,SeventhActivity.class);
+                        Intent intent6 = new Intent(MainActivity.this, SeventhActivity.class);
                         startActivity(intent6);
                         break;
                     case 7:
-                        Intent intent7 = new Intent(MainActivity.this,EighthActivity.class);
+                        Intent intent7 = new Intent(MainActivity.this, EighthActivity.class);
                         startActivity(intent7);
                         break;
                     case 8:
@@ -132,11 +140,11 @@ public class MainActivity extends AppCompatActivity {
         listContentList.add(forthList);
         ListContent fifthList = new ListContent("广播");
         listContentList.add(fifthList);
-        ListContent sixthList = new ListContent("第六个事件");
+        ListContent sixthList = new ListContent("fragment");
         listContentList.add(sixthList);
-        ListContent seventhList = new ListContent("第七个事件");
+        ListContent seventhList = new ListContent("animator");
         listContentList.add(seventhList);
-        ListContent eigthList = new ListContent("第八个事件");
+        ListContent eigthList = new ListContent("handlerThread");
         listContentList.add(eigthList);
         ListContent ninethList = new ListContent("第九个事件");
         listContentList.add(ninethList);

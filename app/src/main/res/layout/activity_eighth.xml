@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
-        android:layout_height="match_parent"
+        android:id="@+id/eight_msg_tv"
         android:layout_width="match_parent"
-        android:text="第八个活动"
-        />
+        android:layout_height="77dp"
+        android:gravity="center|center_horizontal"
+        android:text="第八个活动" />
+
+    <Button
+        android:id="@+id/eight_send_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1秒后更新UI" />
+
+    <Button
+        android:id="@+id/eight_send_msg_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2秒后更新UI" />
 
 </LinearLayout>

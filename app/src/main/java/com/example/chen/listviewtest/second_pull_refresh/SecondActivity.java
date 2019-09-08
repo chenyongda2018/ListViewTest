@@ -1,4 +1,4 @@
-package com.example.chen.listviewtest.second;
+package com.example.chen.listviewtest.second_pull_refresh;
 
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +9,6 @@ import android.support.v7.widget.RecyclerView;
 import com.example.chen.listviewtest.R;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;

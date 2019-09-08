@@ -13,20 +13,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".seventh_animator.SeventhActivity"></activity>
+
         <receiver
-            android:name=".fifth.MyReceiver"
+            android:name=".fifth_broadcast.MyReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.example.chen.listviewtest.MY_BOADCAST"/>
+                <action android:name="com.example.chen.listviewtest.MY_BOADCAST" />
             </intent-filter>
         </receiver>
 
         <service
-            android:name=".third.MyIntentService"
+            android:name=".third_service.MyIntentService"
             android:exported="true" />
         <service
-            android:name=".third.MyService"
+            android:name=".third_service.MyService"
             android:enabled="true"
             android:exported="true" />
 
@@ -37,14 +39,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".first.FirstActivity" />
-        <activity android:name=".second.SecondActivity" />
-        <activity android:name=".third.ThirdActivity" />
-        <activity android:name=".fourth.FourthActivity" />
-        <activity android:name=".fifth.FifthActivity" />
-        <activity android:name=".SixthActivity" />
-        <activity android:name=".SeventhActivity" />
-        <activity android:name=".EighthActivity" />
+        <activity android:name=".first_image_load.FirstActivity" />
+        <activity android:name=".second_pull_refresh.SecondActivity" />
+        <activity android:name=".third_service.ThirdActivity" />
+        <activity android:name=".fourth_okhttp.FourthActivity" />
+        <activity android:name=".fifth_broadcast.FifthActivity" />
+        <activity
+            android:name=".sixth_fragment.SixthActivity"
+            android:process=":remote" />
+        <activity android:name=".eight_handlerThread.EighthActivity" />
         <activity android:name=".NinethActivity" />
         <activity android:name=".TenthActivity" />
     </application>

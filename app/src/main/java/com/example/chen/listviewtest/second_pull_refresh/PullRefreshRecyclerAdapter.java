@@ -1,4 +1,4 @@
-package com.example.chen.listviewtest.second;
+package com.example.chen.listviewtest.second_pull_refresh;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;

@@ -1,8 +1,7 @@
-package com.example.chen.listviewtest.third;
+package com.example.chen.listviewtest.third_service;
 
 import android.app.IntentService;
 import android.content.Intent;
-import android.content.Context;
 import android.support.annotation.Nullable;
 import android.util.Log;
 

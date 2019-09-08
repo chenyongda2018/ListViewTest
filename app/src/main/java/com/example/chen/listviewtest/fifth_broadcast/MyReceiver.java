@@ -1,11 +1,9 @@
-package com.example.chen.listviewtest.fifth;
+package com.example.chen.listviewtest.fifth_broadcast;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
-
-import com.example.chen.listviewtest.MainActivity;
 
 /**
  * 开机广播

@@ -1,8 +1,7 @@
-package com.example.chen.listviewtest.second;
+package com.example.chen.listviewtest.second_pull_refresh;
 
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.LinearLayout;
 
 /**
  * 下滑加载的滑动监听器

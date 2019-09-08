@@ -1,14 +1,11 @@
-package com.example.chen.listviewtest.first;
+package com.example.chen.listviewtest.first_image_load;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.os.StrictMode;
+import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MotionEvent;
-import android.view.View;
-import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.example.chen.listviewtest.R;
@@ -28,7 +25,6 @@ public class FirstActivity extends AppCompatActivity {
         //listView.addHeaderView(headerView);
         //listView.addFooterView(headerView);
         listView.setAdapter(adapter);
-
 
 
     }

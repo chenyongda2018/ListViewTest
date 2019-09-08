@@ -1,4 +1,4 @@
-package com.example.chen.listviewtest.first;
+package com.example.chen.listviewtest.first_image_load;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -18,9 +18,7 @@ import android.widget.ListView;
 import com.example.chen.listviewtest.R;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 
 public class ImageAdapter extends ArrayAdapter {
